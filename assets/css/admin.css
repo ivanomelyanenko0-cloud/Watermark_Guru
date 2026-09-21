@@ -1,0 +1,147 @@
+.wmguru-layout {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 380px;
+	gap: 20px;
+	align-items: start;
+	margin-top: 16px;
+}
+
+.wmguru-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 4px 20px 12px;
+	margin-bottom: 16px;
+}
+
+.wmguru-card h2 {
+	font-size: 15px;
+	padding: 14px 0 4px;
+	margin: 0;
+}
+
+.wmguru-card .form-table th {
+	width: 150px;
+	padding: 14px 10px 14px 0;
+}
+
+.wmguru-card .form-table td {
+	padding: 10px 0;
+}
+
+.wmguru-check {
+	display: inline-block;
+	margin: 0 14px 4px 0;
+}
+
+.wmguru-sticky {
+	position: sticky;
+	top: 42px;
+}
+
+.wmguru-preview-box {
+	background: repeating-conic-gradient(#e5e5e5 0% 25%, #f6f6f6 0% 50%) 50% / 16px 16px;
+	border: 1px solid #dcdcde;
+	border-radius: 3px;
+	min-height: 120px;
+	overflow: hidden;
+}
+
+.wmguru-preview-box img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.wmguru-preview-box .description {
+	margin: 0;
+	padding: 8px 10px;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.wmguru-preview-src {
+	margin: 12px 0 6px;
+}
+
+.wmguru-pos {
+	display: grid;
+	grid-template-columns: repeat(3, 26px);
+	gap: 4px;
+}
+
+.wmguru-pos label {
+	position: relative;
+	display: block;
+	width: 26px;
+	height: 26px;
+}
+
+.wmguru-pos input {
+	position: absolute;
+	opacity: 0;
+	inset: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.wmguru-pos span:not(.screen-reader-text) {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #8c8f94;
+	border-radius: 3px;
+	background: #f6f7f7;
+	box-sizing: border-box;
+}
+
+.wmguru-pos input:checked + span {
+	background: #2271b1;
+	border-color: #2271b1;
+}
+
+.wmguru-pos input:focus-visible + span {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+.wmguru-media {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.wmguru-media-preview {
+	max-width: 140px;
+	max-height: 70px;
+	background: repeating-conic-gradient(#ddd 0% 25%, #fff 0% 50%) 50% / 12px 12px;
+	border: 1px solid #dcdcde;
+}
+
+.wmguru-log {
+	margin: 0;
+	list-style: none;
+}
+
+.wmguru-log li {
+	margin: 0 0 4px;
+}
+
+.wmguru-action-result {
+	margin-left: 8px;
+	color: #50575e;
+}
+
+@media (max-width: 1100px) {
+	.wmguru-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.wmguru-side {
+		order: -1;
+	}
+
+	.wmguru-sticky {
+		position: static;
+	}
+}

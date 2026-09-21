@@ -1,0 +1,72 @@
+<?php
+/**
+ * Plugin Name:       Watermark Guru
+ * Plugin URI:        https://cognitolab.net/products/watermark-guru
+ * Description:       Non-destructive image watermarks generated on the fly and cached. Your original files are never modified.
+ * Version:           1.0.0
+ * Requires at least: 6.3
+ * Requires PHP:      7.4
+ * Author:            CognitoLab
+ * Author URI:        https://cognitolab.net
+ * License:           GPLv2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       watermark-guru
+ * Domain Path:       /languages
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+define( 'WMGURU_VERSION', '1.0.0' );
+// Bump when the rendering pipeline changes output: it is part of every cache key.
+define( 'WMGURU_ENGINE_VERSION', 1 );
+define( 'WMGURU_PLUGIN_FILE', __FILE__ );
+define( 'WMGURU_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'WMGURU_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+
+require_once WMGURU_PLUGIN_DIR . 'includes/extension-api.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/settings.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/profile.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/cache.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/urls.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/file-handlers.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/engine.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/attachments.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/rewriter.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/delivery.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/site-health.php';
+require_once WMGURU_PLUGIN_DIR . 'includes/admin.php';
+
+/**
+ * No load_plugin_textdomain() call: discouraged since WP 4.6 for plugins
+ * hosted on wordpress.org - core auto-loads translations using the plugin slug.
+ */
+
+/**
+ * Create the cache directory, seed default settings and schedule the two
+ * background jobs (stale-cache cleanup, first delivery self-test).
+ */
+function wmguru_activate() {
+	add_option( WMGURU_OPTION, wmguru_default_settings() );
+	wmguru_ensure_cache_dir();
+
+	if ( ! wp_next_scheduled( 'wmguru_daily_cleanup' ) ) {
+		wp_schedule_event( time() + HOUR_IN_SECONDS, 'daily', 'wmguru_daily_cleanup' );
+	}
+	if ( ! wp_next_scheduled( 'wmguru_run_delivery_test' ) ) {
+		wp_schedule_single_event( time() + 15, 'wmguru_run_delivery_test' );
+	}
+}
+register_activation_hook( WMGURU_PLUGIN_FILE, 'wmguru_activate' );
+
+/**
+ * Deactivation only stops the schedules. URL rewriting stops with the hooks
+ * themselves, so visitors get the untouched originals immediately; the cache
+ * is left in place (it is removed on uninstall).
+ */
+function wmguru_deactivate() {
+	wp_clear_scheduled_hook( 'wmguru_daily_cleanup' );
+	wp_clear_scheduled_hook( 'wmguru_run_delivery_test' );
+}
+register_deactivation_hook( WMGURU_PLUGIN_FILE, 'wmguru_deactivate' );

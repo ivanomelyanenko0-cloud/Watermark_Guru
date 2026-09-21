@@ -1,0 +1,546 @@
+# Copyright (C) 2026 CognitoLab
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Watermark Guru 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/watermark-guru\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-21T01:40:20+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: watermark-guru\n"
+
+#. Plugin Name of the plugin
+#: includes/admin.php:12
+#: includes/admin.php:13
+#: includes/admin.php:283
+#: includes/site-health.php:40
+msgid "Watermark Guru"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://cognitolab.net/products/watermark-guru"
+msgstr ""
+
+#. Description of the plugin
+msgid "Non-destructive image watermarks generated on the fly and cached. Your original files are never modified."
+msgstr ""
+
+#. Author of the plugin
+msgid "CognitoLab"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://cognitolab.net"
+msgstr ""
+
+#: includes/admin.php:40
+msgid "Settings"
+msgstr ""
+
+#: includes/admin.php:64
+msgid "Choose an image"
+msgstr ""
+
+#: includes/admin.php:65
+msgid "Use this image"
+msgstr ""
+
+#: includes/admin.php:66
+msgid "Rendering preview…"
+msgstr ""
+
+#: includes/admin.php:67
+msgid "Preview failed."
+msgstr ""
+
+#: includes/admin.php:68
+msgid "Working…"
+msgstr ""
+
+#: includes/admin.php:69
+msgid "The request failed."
+msgstr ""
+
+#: includes/admin.php:70
+#: includes/admin.php:424
+msgid "Built-in sample image"
+msgstr ""
+
+#: includes/admin.php:138
+msgid "Text size"
+msgstr ""
+
+#: includes/admin.php:138
+msgid "Logo width"
+msgstr ""
+
+#: includes/admin.php:147
+msgid "of the image width"
+msgstr ""
+
+#: includes/admin.php:148
+msgid "min"
+msgstr ""
+
+#: includes/admin.php:155
+msgid "max"
+msgstr ""
+
+#: includes/admin.php:163
+msgid "The watermark scales with each image, within the min/max limits."
+msgstr ""
+
+#: includes/admin.php:168
+msgid "Position"
+msgstr ""
+
+#: includes/admin.php:171
+msgid "Margin"
+msgstr ""
+
+#: includes/admin.php:180
+msgid "of the shorter side"
+msgstr ""
+
+#: includes/admin.php:183
+msgid "Opacity"
+msgstr ""
+
+#: includes/admin.php:194
+msgid "Rotation"
+msgstr ""
+
+#: includes/admin.php:202
+msgid "clockwise"
+msgstr ""
+
+#: includes/admin.php:214
+msgid "Text watermark"
+msgstr ""
+
+#: includes/admin.php:214
+msgid "Image watermark (logo)"
+msgstr ""
+
+#: includes/admin.php:219
+msgid "Enabled"
+msgstr ""
+
+#: includes/admin.php:220
+msgid "Draw this layer"
+msgstr ""
+
+#: includes/admin.php:225
+msgid "Text"
+msgstr ""
+
+#: includes/admin.php:227
+msgid "Tokens: {site} site title, {year} current year, {url} site domain."
+msgstr ""
+
+#: includes/admin.php:235
+msgid "Font"
+msgstr ""
+
+#: includes/admin.php:237
+msgid "Bundled fonts cover Latin, Cyrillic and Greek."
+msgstr ""
+
+#: includes/admin.php:240
+msgid "Color"
+msgstr ""
+
+#: includes/admin.php:249
+msgid "Choose image"
+msgstr ""
+
+#: includes/admin.php:250
+msgid "Remove"
+msgstr ""
+
+#: includes/admin.php:252
+msgid "Logo"
+msgstr ""
+
+#: includes/admin.php:252
+msgid "A PNG with a transparent background works best."
+msgstr ""
+
+#: includes/admin.php:287
+msgid "Watermarks are switched off. Set up your watermark below, check the preview, then enable it under “General”. Your original files are never modified either way."
+msgstr ""
+
+#: includes/admin.php:294
+msgid "General"
+msgstr ""
+
+#: includes/admin.php:296
+msgid "Watermarks"
+msgstr ""
+
+#: includes/admin.php:297
+msgid "Show watermarked images on the front end"
+msgstr ""
+
+#: includes/admin.php:298
+msgid "Copies are generated on first view and cached. Turn this off at any time and visitors get the untouched originals immediately."
+msgstr ""
+
+#: includes/admin.php:305
+msgid "Apply to sizes"
+msgstr ""
+
+#: includes/admin.php:305
+msgid "“Full size” also covers scaled and original uploads."
+msgstr ""
+
+#: includes/admin.php:308
+msgid "Skip small images"
+msgstr ""
+
+#: includes/admin.php:309
+msgid "narrower than"
+msgstr ""
+
+#: includes/admin.php:316
+msgid "or shorter than"
+msgstr ""
+
+#: includes/admin.php:326
+msgid "Output quality"
+msgstr ""
+
+#: includes/admin.php:334
+msgid "for JPEG, WebP and AVIF copies (originals are not re-encoded)"
+msgstr ""
+
+#: includes/admin.php:338
+msgid "Automatic (Imagick if available, otherwise GD)"
+msgstr ""
+
+#: includes/admin.php:339
+msgid "Imagick"
+msgstr ""
+
+#: includes/admin.php:340
+msgid "GD"
+msgstr ""
+
+#: includes/admin.php:355
+msgid "not supported"
+msgstr ""
+
+#: includes/admin.php:358
+msgid "Image library"
+msgstr ""
+
+#: includes/admin.php:363
+msgid "On uninstall"
+msgstr ""
+
+#: includes/admin.php:364
+msgid "Also delete these settings (the cache is always removed)"
+msgstr ""
+
+#: includes/admin.php:373
+msgid "Automatic"
+msgstr ""
+
+#: includes/admin.php:374
+msgid "Direct file URLs"
+msgstr ""
+
+#: includes/admin.php:375
+msgid "Signed query URLs (fallback)"
+msgstr ""
+
+#: includes/admin.php:382
+msgid "Last test: direct file URLs work."
+msgstr ""
+
+#. translators: %s: error detail
+#: includes/admin.php:385
+msgid "Last test: direct URLs do not work here (%s). The fallback is used automatically."
+msgstr ""
+
+#. translators: %s: error detail
+#: includes/admin.php:388
+msgid "Last test could not run (%s). Direct file URLs are assumed."
+msgstr ""
+
+#: includes/admin.php:390
+msgid "Not tested yet."
+msgstr ""
+
+#: includes/admin.php:393
+msgid "Delivery & cache"
+msgstr ""
+
+#: includes/admin.php:395
+msgid "URL mode"
+msgstr ""
+
+#: includes/admin.php:396
+msgid "Test delivery"
+msgstr ""
+
+#: includes/admin.php:400
+msgid "Cache"
+msgstr ""
+
+#. translators: 1: number of files, 2: size
+#: includes/admin.php:403
+msgid "%1$s files, %2$s"
+msgstr ""
+
+#: includes/admin.php:406
+msgid "Clear cache"
+msgstr ""
+
+#: includes/admin.php:407
+msgid "Clearing the cache is always safe: copies are regenerated on demand."
+msgstr ""
+
+#: includes/admin.php:414
+msgid "Recent problems"
+msgstr ""
+
+#: includes/admin.php:422
+msgid "Live preview"
+msgstr ""
+
+#: includes/admin.php:425
+msgid "Use one of my images"
+msgstr ""
+
+#: includes/admin.php:426
+msgid "Back to sample"
+msgstr ""
+
+#: includes/admin.php:427
+msgid "The preview is rendered by the same engine that creates the real copies, using your unsaved settings."
+msgstr ""
+
+#: includes/admin.php:431
+msgid "Need more?"
+msgstr ""
+
+#: includes/admin.php:431
+msgid "Multiple watermark profiles, unlimited layers and rules that pick a profile by post type, category or file type are available in Watermark Guru Pro, a separate optional add-on."
+msgstr ""
+
+#: includes/admin.php:432
+msgid "Learn about Pro"
+msgstr ""
+
+#: includes/admin.php:478
+msgid "Animated images are shown and served unchanged."
+msgstr ""
+
+#: includes/admin.php:485
+msgid "Nothing to draw yet: enable a layer and give it content."
+msgstr ""
+
+#: includes/admin.php:492
+msgid "Could not read the rendered preview."
+msgstr ""
+
+#: includes/admin.php:507
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: includes/admin.php:545
+msgid "Direct file URLs work."
+msgstr ""
+
+#: includes/admin.php:548
+msgid "Direct URLs do not work here; the fallback will be used."
+msgstr ""
+
+#: includes/admin.php:551
+msgid "The test could not run."
+msgstr ""
+
+#: includes/admin.php:559
+msgid "Cache cleared."
+msgstr ""
+
+#: includes/attachments.php:81
+msgid "Watermark"
+msgstr ""
+
+#: includes/attachments.php:83
+msgid "Do not watermark this image"
+msgstr ""
+
+#: includes/delivery.php:187
+msgid "The cache directory is not writable."
+msgstr ""
+
+#: includes/delivery.php:212
+msgid "Could not move the generated file into the cache."
+msgstr ""
+
+#: includes/delivery.php:291
+msgid "The cache directory could not be created or is not writable."
+msgstr ""
+
+#. translators: %d: HTTP status code
+#: includes/delivery.php:309
+msgid "Unexpected response (HTTP %d) for a not-yet-cached image URL."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-gd.php:35
+msgid "Could not read the image file."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-gd.php:40
+msgid "Not a readable image."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-gd.php:43
+#: includes/drivers/class-wmguru-driver-imagick.php:39
+msgid "The image is too large to process."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-gd.php:49
+msgid "GD could not decode the image."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-gd.php:125
+msgid "GD could not measure the text (font unreadable?)."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-gd.php:157
+msgid "GD could not read the watermark image."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-gd.php:179
+msgid "GD could not rotate the watermark image."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-gd.php:283
+msgid "GD could not write the watermarked image."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-imagick.php:187
+msgid "Unsupported output type."
+msgstr ""
+
+#: includes/drivers/class-wmguru-driver-imagick.php:210
+msgid "Imagick could not write the watermarked image."
+msgstr ""
+
+#: includes/engine.php:164
+msgid "The profile has no layer to draw."
+msgstr ""
+
+#: includes/engine.php:172
+msgid "No image library supports this file type."
+msgstr ""
+
+#: includes/engine.php:234
+msgid "No layer could be drawn."
+msgstr ""
+
+#: includes/file-handlers.php:60
+msgid "Could not copy the animated image."
+msgstr ""
+
+#: includes/profile.php:24
+msgid "Default"
+msgstr ""
+
+#: includes/settings.php:23
+msgid "Top left"
+msgstr ""
+
+#: includes/settings.php:24
+msgid "Top center"
+msgstr ""
+
+#: includes/settings.php:25
+msgid "Top right"
+msgstr ""
+
+#: includes/settings.php:26
+msgid "Middle left"
+msgstr ""
+
+#: includes/settings.php:27
+msgid "Center"
+msgstr ""
+
+#: includes/settings.php:28
+msgid "Middle right"
+msgstr ""
+
+#: includes/settings.php:29
+msgid "Bottom left"
+msgstr ""
+
+#: includes/settings.php:30
+msgid "Bottom center"
+msgstr ""
+
+#: includes/settings.php:31
+msgid "Bottom right"
+msgstr ""
+
+#: includes/settings.php:145
+msgid "Full size"
+msgstr ""
+
+#: includes/site-health.php:16
+msgid "Watermark Guru image library"
+msgstr ""
+
+#: includes/site-health.php:20
+msgid "Watermark Guru delivery"
+msgstr ""
+
+#: includes/site-health.php:64
+msgid "No image library can watermark some common formats"
+msgstr ""
+
+#. translators: %s: comma separated mime types
+#: includes/site-health.php:67
+msgid "Neither GD nor Imagick can process: %s. Ask your host to enable GD with FreeType, or Imagick."
+msgstr ""
+
+#: includes/site-health.php:73
+msgid "Watermark Guru has an image library"
+msgstr ""
+
+#: includes/site-health.php:75
+msgid "JPEG, PNG and WebP can be watermarked."
+msgstr ""
+
+#: includes/site-health.php:86
+msgid "The Watermark Guru cache directory is not writable"
+msgstr ""
+
+#: includes/site-health.php:88
+msgid "Watermarked copies are stored in wp-content/uploads/wmguru-cache. Make the uploads directory writable by the web server."
+msgstr ""
+
+#: includes/site-health.php:96
+msgid "Watermarked images use the fallback delivery mode"
+msgstr ""
+
+#: includes/site-health.php:98
+msgid "Your server does not pass missing image URLs to WordPress, so Watermark Guru uses signed query-string URLs instead. Everything works; the URLs are just less pretty."
+msgstr ""
+
+#: includes/site-health.php:104
+msgid "Watermarked image delivery works"
+msgstr ""
+
+#: includes/site-health.php:106
+msgid "The cache directory is writable and image URLs are routed correctly."
+msgstr ""
